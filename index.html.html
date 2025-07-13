@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular - Educación Física</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdf6fb;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #b70095;
+    }
+    .anio {
+      margin-bottom: 3rem;
+    }
+    .anio h2 {
+      color: #9e3ca2;
+      border-bottom: 2px solid #e6c4e9;
+      padding-bottom: 0.3rem;
+    }
+    .materias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .materia {
+      background: #ffe6f7;
+      border-left: 6px solid #d45bcb;
+      padding: 1rem;
+      border-radius: 10px;
+      width: calc(33% - 1rem);
+      min-width: 250px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .materia:hover {
+      background: #fbd7f3;
+    }
+    .materia.aprobada {
+      background: #d0ffd7;
+      border-left-color: #3ec46d;
+    }
+    .materia.cursando {
+      background: #fffacc;
+      border-left-color: #e1b800;
+    }
+    .materia.pendiente {
+      background: #ffe6f7;
+      border-left-color: #d45bcb;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular - Profesorado en Educación Física</h1>
+
+  <div class="anio">
+    <h2>Primer Año</h2>
+    <div class="materias">
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Pedagogía</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Lectura, escritura y oralidad</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Aprendizajes y prácticas educativas</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Territorio, sujetos e instituciones</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Deporte comunitario</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Educación física en la niñez</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Taller de prácticas lúdicas</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Educación física en el joven y el adulto</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas deportivas de conjunto I</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas gimnásticas I</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Segundo Año</h2>
+    <div class="materias">
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Didáctica y curriculum</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Educación sexual integral</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Pensamiento pedagógico latinoamericano</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Cultura y alfabetización digital</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas en ámbito socioeducativo</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas deportivas de conjunto II</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas gimnásticas II</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas deportivas de conjunto III</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Natación I</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Bases anatómicas y biomecánicas</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Tercer Año</h2>
+    <div class="materias">
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Historia de la Nación Argentina</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Didáctica en Educación Superior</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Asignatura UNAHUR</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas docentes Inicial y Primario</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Diseño de proyectos sociocomunitarios</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas deportivas de conjunto IV</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Educación física y discapacidad</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Taller de primeros auxilios</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Natación II</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Historia de la Educación Física Argentina</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Cuarto Año</h2>
+    <div class="materias">
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Tecnología educativa</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Política educativa</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas docentes Secundario y Superior</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Educación ambiental</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Atletismo</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Teoría de la Educación Física</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Investigación en Ed. Física</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Prácticas corporales expresivas</div>
+      <div class="materia pendiente" onclick="cambiarEstado(this)">Fisiología del ejercicio</div>
+    </div>
+  </div>
+
+  <script>
+    function cambiarEstado(el) {
+      if (el.classList.contains('pendiente')) {
+        el.classList.remove('pendiente');
+        el.classList.add('cursando');
+      } else if (el.classList.contains('cursando')) {
+        el.classList.remove('cursando');
+        el.classList.add('aprobada');
+      } else if (el.classList.contains('aprobada')) {
+        el.classList.remove('aprobada');
+        el.classList.add('pendiente');
+      }
+    }
+  
+    // Guardar estado en localStorage
+    function guardarEstados() {
+      const materias = document.querySelectorAll('.materia');
+      const estados = Array.from(materias).map(m => m.classList[1]); // 'pendiente', 'cursando', etc.
+      localStorage.setItem('estadosMaterias', JSON.stringify(estados));
+    }
+
+    // Restaurar estado desde localStorage
+    function restaurarEstados() {
+      const materias = document.querySelectorAll('.materia');
+      const estados = JSON.parse(localStorage.getItem('estadosMaterias'));
+      if (estados && estados.length === materias.length) {
+        materias.forEach((m, i) => {
+          m.classList.remove('pendiente', 'cursando', 'aprobada');
+          m.classList.add(estados[i]);
+        });
+      }
+    }
+
+    // Llamar a restaurar al cargar la página
+    window.onload = restaurarEstados;
+
+    // Modificar cambiarEstado para guardar cada vez que se cambia
+    function cambiarEstado(el) {
+      if (el.classList.contains('pendiente')) {
+        el.classList.remove('pendiente');
+        el.classList.add('cursando');
+      } else if (el.classList.contains('cursando')) {
+        el.classList.remove('cursando');
+        el.classList.add('aprobada');
+      } else if (el.classList.contains('aprobada')) {
+        el.classList.remove('aprobada');
+        el.classList.add('pendiente');
+      }
+      guardarEstados(); // guardar cada vez que cambia
+    }
+    </script>
+</body>
+</html>
